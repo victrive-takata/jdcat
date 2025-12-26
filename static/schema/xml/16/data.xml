@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>観察単位</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->anlyUnit</border>
+			<label>R(推奨)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+			<above>
+			<glossary>
+				観察単位 (<a href="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0" target="_blank">Excelファイル</a>)<br />
+				出典：DDI Alliance. (2019). Analysis Unit (Version 1.0) [Controlled vocabulary].  
+				CESSDA. urn:ddi:int.ddi.cv:AnalysisUnit:1.0.  
+				(Retrieved January 26, 2022, https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+			</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>統制語彙より、そのデータの観察単位を記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

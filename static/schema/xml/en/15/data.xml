@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Version</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->verStmt->version</border>
+			<label>R(Recommended)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+			<border>date</border>
+			<label>O(Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the version number.</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+		<li>The update date of the version information should be entered in the <code>date</code> attribute in the format YYYY-MM-DD.</li>
+		</list>
+	</category>
+
+	<category name="deprecate">
+		<list>
+		<li>Do not include prefixes such as “Ver.”</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:version</li>
+		</list>
+	</category>
+</schema>

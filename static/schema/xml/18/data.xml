@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>サンプリング方法</h1>
+
+	<category name="item">
+		<border>stdyDscr->method->dataColl->sampProc</border>
+			<label>R(推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+			<above>
+			<glossary>
+					サンプリング方法 (<a href="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:SamplingProcedure:1.1" target="_blank">Excelファイル</a>)<br />
+					出典：DDI Alliance. (2019). Sampling Procedure (Version 1.1) [Controlled vocabulary].<br />
+					CESSDA. urn:ddi:int.ddi.cv:SamplingProcedure:1.1.<br />
+					(Retrieved January 26, 2022, https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:SamplingProcedure:1.1)
+			</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>統制語彙より、そのデータのサンプリング方法を記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

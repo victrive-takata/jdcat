@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Publisher</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->producer</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Describe when the creator or distributor of the data is different from the editor of the data.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;producer xml:lang="ja"&gt;SSJデータアーカイブ&lt;/producer&gt;</codebox>
+		</category>
+
+	<category name="mapping">
+		<list>
+		<li>dc:publisher</li>
+		</list>
+	</category>
+</schema>

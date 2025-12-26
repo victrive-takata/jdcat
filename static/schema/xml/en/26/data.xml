@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Bibliographic Citation</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->biblCit</border>
+		<label>O (Optional)</label>
+		<repeat>0-1 (Non-repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>If the institution specifies required formats for acknowledgments or citations, provide the required text or citation instructions.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;biblCit xml:lang=&quot;en&quot;&gt;The data for this secondary analysis, &quot;Global Career Survey, 2012&quot; (Recruit Works Institute), was provided by the SSJ Data Archive, the Social Science Japan Data Archive at the Institute of Social Science, The University of Tokyo.&lt;/biblCit&gt;</codebox>
+		</category>
+</schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>License</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->Copyright</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-N (Repeatable：expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the usage conditions of the data.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:rights</li>
+		</list>
+	</category>
+</schema>

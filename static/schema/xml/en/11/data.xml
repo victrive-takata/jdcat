@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Access</h1>
+
+	<category name="item">
+		<border>stdyDscr->dataAccs->setAvail->avlStatus</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+
+			<above>
+			<glossary>Access Rights (<a href="https://schema.irdb.nii.ac.jp/ja/access_rights_vocabulary" target="_blank">Excel file</a>)<br />Source: Japan Consortium for Open Access Repository (2022), “Access Rights Vocabulary Table”, JPCOAR Schema Guideline (Retrieved January 25, 2022)</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Specify the access conditions for the data.</li>
+		</list>
+	</category>
+
+
+
+	<category name="recommend">
+		<codebox>&lt;avlStatus xml:lang="en"&gt;restricted access&lt;/avlStatus&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dcterms:accessRights</li>
+		</list>
+	</category>
+</schema>

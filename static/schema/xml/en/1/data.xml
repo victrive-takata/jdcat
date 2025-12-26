@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Title</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->titlStmt->titl</border>
+		<label>M (Required)</label>
+		<repeat>1 (Not repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>M (Required)</label>
+			<repeat>1 (Not repeatable)</repeat>
+
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the survey and content title. For accepted data, it is preferable to confirm with the depositor.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;titl xml:lang="en"&gt;Global Career Survey, 2012&lt;/titl&gt;</codebox>
+	</category>
+
+	<category name="deprecate">
+		<list>
+			<li>Do not omit xml:lang.</li>
+            <li>We do not recommend listing multiple languages side by side.</li>
+		</list>
+		<codebox>&lt;titl xml:lang="en"&gt;Research Infrastructure Framework for the Information Explosion Era&lt;/titl&gt;
+
+&lt;titl xml:lang="ja" xml:lang="jaen"&gt;
+    情報爆発時代の研究基盤構想 = Research Project on Cyber Infrastructure for Information-explosion Era
+&lt;/titl&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:title</li>
+		</list>
+	</category>
+</schema>

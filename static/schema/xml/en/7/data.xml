@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Summary</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->abstract</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-N (Repeatable：expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label></label>
+			<repeat></repeat>
+
+
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Fill in the data summary.</li>
+			<li>Japanese calendar dates in the Japan Statistical Yearbook, period classifications and old place names in the humanities field should be entered in this field.</li>
+			<li>Any other information you wish to include as free text should be entered in this field.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;abstract xml:lang="ja"&gt;The employment and job-changing realities of young people in Asia have not been clearly understood due to the lack of comparable data. Therefore, this survey was conducted across multiple countries to collect basic information on the employment status of young people in Asia and to identify commonalities and differences within the region. The target countries are China, South Korea, India, Thailand, Malaysia, Indonesia, Vietnam, and Japan. Additionally, surveys were conducted in the United States, Brazil, Germany, Russia, and Australia to confirm Asia's relative position. 　本調査では，対象を20代，30代の都市圏在住の大卒者に限定している。たとえその国に統計値が存在していても，国の内情が多様性に富む場合には，その平均値が意味をなさないことがある。つまり，誰のことを語っているのか，焦点を絞ることが重要となる。そのため本調査は，各国の経済の発展を担う，大卒20代，30代で，都市部で働いている人を対象に調査を実施している。 　なお，日本のデータは，調査番号SSJDA0870 「ワーキングパーソン調査，2012」の一部のデータを，寄託者が本調査に合わせて統合したものである。&lt;/abstract&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Abstract)</li>
+		</list>
+	</category>
+</schema>

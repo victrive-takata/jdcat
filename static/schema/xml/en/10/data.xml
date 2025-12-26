@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Data Type</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->dataKind</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-N (Repeatable：expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+			<above>
+			<glossary>Data Type(<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：International Organization for Standardization, 2022, "ISO 3166 Country Codes", Geneva: International Organization for Standardization, (Retrieved January 25, 2022, https://www.iso.org/iso-3166-country-codes.html） </glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Select the appropriate data type from the controlled vocabulary list.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;dataKind xml:lang="ja"&gt;Quantitative Survey: Micro Data&lt;/dataKind&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Other)</li>
+		</list>
+	</category>
+</schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Geographic Coverage</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->geogCover</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-N (Repeatable：except mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: except mandatory term)</repeat>
+			<above>
+			<glossary>Geographic Coverage(<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">xlsx file</a>)<br />出典：International Organization for Standardization, 2022, "ISO 3166 Country Codes", Geneva: International Organization for Standardization, (Retrieved January 25, 2022, https://www.iso.org/iso-3166-country-codes.html） </glossary>
+			<glossary>Japan Statistical Yearbook: Outlying Areas (Former Place Names) (<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">xlsx file</a>)<br />Source：内閣統計局「日本帝国統計年鑑」</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Use the controlled vocabulary consisting of current country, region, and prefecture names, as well as former names of “overseas territories” listed in the Japan Statistical Yearbook.</li>
+		</list>
+	</category>
+
+
+
+	<category name="recommend">
+		<codebox>&lt;geogCover xml:lang="en"&gt;Russia&lt;/geogCover&gt;
+&lt;geogCover xml:lang="en"&gt;Australia&lt;/geogCover&gt;
+&lt;geogCover xml:lang="en"&gt;Tokyo Metropolis&lt;/geogCover&gt;
+&lt;geogCover xml:lang="en"&gt;Kanagawa Prefecture&lt;/geogCover&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:geoLocationPlace</li>
+		</list>
+	</category>
+</schema>

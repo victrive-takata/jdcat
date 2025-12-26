@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Provider</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->distStmt->depositr</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+			<border>abbr</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+			<border>affiliation</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>
+				In the humanities, this field is used when the holder of the data 
+				differs from the holder of the historical materials on which the data is based.
+				In the social sciences, this field is used to indicate the depositor.
+			</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>jpcoar:contributor (contributorType:Others)</li>
+		</list>
+	</category>
+</schema>

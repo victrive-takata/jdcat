@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>対象時期</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->timePrd</border>
+		<label>MA（該当する場合は必須）</label>
+		<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+
+
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>その調査データがいつの事象を表しているのかを記入する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>対象時期はYYYY-MM-DD形式で入力する</li>
+			<li>範囲で入力する場合、start,endの対で入力する</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;timePrd event=&quot;start&quot; xml:lang=&quot;ja&quot;&gt;2012&lt;/timePrd&gt;
+&lt;timePrd event=&quot;end&quot; xml:lang=&quot;ja&quot;&gt;2012&lt;/timePrd&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dcterms:temporal</li>
+		</list>
+	</category>
+</schema>

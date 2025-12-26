@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>バージョン情報</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->verStmt->version</border>
+			<label>R(推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>date</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>バージョンナンバーを入力する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+		<li>バージョン情報の更新日はdateにYYYY-MM-DD形式で入力する</li>
+		</list>
+	</category>
+
+	<category name="deprecate">
+		<list>
+		<li>「Ver.」などは入れないこと</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:version</li>
+		</list>
+	</category>
+</schema>

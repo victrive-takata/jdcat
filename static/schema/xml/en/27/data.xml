@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Datafile URI</h1>
+
+	<category name="item">
+		<border>stdyDscr->dataAccs->setAvail->accsPlac</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Provide the data file URI of the dataset.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>jpcoar:URI</li>
+		</list>
+	</category>
+</schema>

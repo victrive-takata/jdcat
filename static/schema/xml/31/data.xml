@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>所蔵者・寄託者</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->distStmt->depositr</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA(強く推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+			<border>abbr</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+			<border>affiliation</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>人文学分野において、データの保有者とデータの基となる史資料の所蔵者が異なる場合に使用する。社会科学分野において、寄託者の入力に用いる。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>jpcoar:contributor（contributorType:Others）</li>
+		</list>
+	</category>
+</schema>

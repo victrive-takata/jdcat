@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>データの言語</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->verStmt->notes</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<above>
+			<glossary>データの言語 (<a href="https://iso639-3.sil.org/code_tables/639/data" target="_blank">Excelファイル</a>)<br />
+				出典：SIL International, 2022, "ISO 639 Code Tables", Dallas, TX: SIL International, (Retrieved January 25, 2022,https://iso639-3.sil.org/code_tables/639/data)<br />
+				出典：ISO, Unicode, Inc., 2022, "Codes for the representation of names of scripts", Mountain View, CA: Unicode, Inc., (Retrieved January 25, 2022, https://unicode.org/iso15924/iso15924-codes.html）
+			</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>ISO639-3で記述する。"-"で繋げ、ISO15924を用いてデータの文字を記載することができる</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;verStmt&gt;
+&lt;notes&gt;jpn&lt;/notes&gt;
+&lt;/verStmt&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:language</li>
+		</list>
+	</category>
+</schema>

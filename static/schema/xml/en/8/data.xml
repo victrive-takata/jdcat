@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Time Period(s)</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->timePrd</border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-N (Repeatable：expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O（Optional）</label>
+			<repeat>0-1（Not repeatable）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the time period that the survey data covers.</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>Enter the time period in YYYY-MM-DD format.</li>
+			<li>When entering a range, input it as a pair of start and end values.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;timePrd event=&quot;start&quot; xml:lang=&quot;ja&quot;&gt;2012&lt;/timePrd&gt;
+&lt;timePrd event=&quot;end&quot; xml:lang=&quot;ja&quot;&gt;2012&lt;/timePrd&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dcterms:temporal</li>
+		</list>
+	</category>
+</schema>

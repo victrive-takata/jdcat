@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>DOI</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->titlStmt->IDNo </border>
+		<label>MA (Mandatory when applicable)</label>
+		<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+			<border>agency</border>
+			<label>M (Mandatory)</label>
+			<repeat>1 (Non-repeatable: mandatory)</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the DOI assigned by each data distribution agency.</li>
+		</list>
+	</category>
+
+	<category name="deprecate">
+		<list>
+		<li>The "agency" attribute must not be omitted and should be written explicitly as “DOI”.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:relatedIdentifier (identifierType=DOI)</li>
+		</list>
+	</category>
+</schema>

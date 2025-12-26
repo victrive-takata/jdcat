@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>データファイルURI</h1>
+
+	<category name="item">
+		<border>stdyDscr->dataAccs->setAvail->accsPlac</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>当該データのデータファイルURIを記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>jpcoar:URI</li>
+		</list>
+	</category>
+</schema>

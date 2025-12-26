@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>作成者</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->rspStmt->AuthEnty</border>
+		<label>M（必須）</label>
+		<repeat>1-N（繰返可）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>1（繰返不可）</repeat>
+			<border>affiliation</border>
+			<label>O（任意）</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>id</border>
+			<label>O（任意）</label>
+			<repeat>0-1（繰返不可）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>人名の場合「姓,  名」（カンマ＋半角空白）と表記する。英語表記は「姓, (ミドルネーム,  )名」と表記する。団体名で入力しても良い。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;rspStmt&gt;
+&lt;AuthEnty xml:lang=&quot;ja&quot; affiliation=&quot;Osaka University of Commerce&quot;&gt;谷岡, 一郎&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang=&quot;ja&quot; affiliation=&quot;Institute of Social Science, The University of Tokyo&quot;&gt;岩井, 紀子&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang=&quot;ja&quot;&gt;仁田, 道夫&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang=&quot;ja&quot;&gt;佐藤, 博樹&lt;/AuthEnty&gt;
+&lt;/rspStmt&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:creator</li>
+		</list>
+	</category>
+</schema>

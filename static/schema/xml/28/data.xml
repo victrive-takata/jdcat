@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>関連情報</h1>
+
+	<category name="item">
+		<border>stdyDscr->othrStdyMat->relStdy</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA(強く推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>関連データを記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>jpcoar:relation relationType="isSupplementedBy"</li>
+		</list>
+	</category>
+</schema>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Author</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->rspStmt->AuthEnty</border>
+		<label>M (Required)</label>
+		<repeat>1-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory if applicable)</label>
+			<repeat>1 (Not repeatable)</repeat>
+			<border>affiliation</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Not repeatable)</repeat>
+			<border>id</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Not repeatable)</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the name of the author. For personal names, use the format “Last name, First name” (comma + half-width space). For English names, use “Last name, (Middle name,) First name”. Organization names may also be used.</li></list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;rspStmt&gt;
+&lt;AuthEnty xml:lang="ja" affiliation="Osaka University of Commerce"&gt;Tanioka, Ichiro&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang="ja" affiliation="Institute of Social Science, The University of Tokyo"&gt;Iwai, Noriko&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang="ja"&gt;Nitta, Michio&lt;/AuthEnty&gt;
+&lt;AuthEnty xml:lang="ja"&gt;Sato, Hiroki&lt;/AuthEnty&gt;
+&lt;/rspStmt&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:creator</li>
+		</list>
+	</category>
+</schema>

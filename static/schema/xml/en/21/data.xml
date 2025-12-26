@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Grant ID</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->grantNo</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>agency</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the grant number associated with the research funding.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:awardNumber</li>
+		</list>
+	</category>
+</schema>

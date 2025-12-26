@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Unit of Analysis</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->anlyUnit</border>
+		<label>R (Recommended)</label>
+		<repeat>0-N (Repeatable: not mandatory)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: except mandatory)</repeat>
+			<above>
+			<glossary>
+					Analysis Unit (<a href="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0" target="_blank">Excel file</a>)<br />
+					Source: DDI Alliance. (2019). Analysis Unit (Version 1.0) [Controlled vocabulary].<br />
+					CESSDA. urn:ddi:int.ddi.cv:AnalysisUnit:1.0.<br />
+					(Retrieved January 26, 2022, https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:AnalysisUnit:1.0)
+			</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Select and enter the analysis unit of the dataset from the controlled vocabulary.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

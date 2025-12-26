@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>整理番号</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->titlStmt->IDNo</border>
+		<label>M（必須）</label>
+		<repeat>1（繰返不可）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>agency</border>
+			<label>M（必須）</label>
+			<repeat>1（繰返不可）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>各データ配布機関で付番したIDを記入する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>agencyは省略せず、機関略書を半角文字で記入すること</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;IDNo agency="SSJDA" xml:lang="ja"&gt;0869&lt;/IDNo&gt;</codebox>
+	</category>
+
+	<category name="deprecate">
+		<list>
+			<li>agencyは省略しない</li>
+			<li>agencyに全角文字は使わない</li>
+
+		</list>
+		<codebox>&lt;IDNo&gt;0869&lt;/IDNo&gt;
+&lt;IDNo agency=&quot;SSJデータアーカイブ&quot; xml:lang=&quot;ja&quot;&gt;0869&lt;/IDNo&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:relatedIdentifier (identifierType=Local)</li>
+		</list>
+	</category>
+</schema>

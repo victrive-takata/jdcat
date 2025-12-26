@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>配布者</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->distStmt->distrbtr</border>
+		<label>M（必須）</label>
+		<repeat>1（繰返不可）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>1（繰返不可）</repeat>
+			<border>abbr</border>
+			<label>O（任意）</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>affiliation</border>
+			<label>O（任意）</label>
+			<repeat>0-1（繰返不可）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>当該のデータを配布している機関名を記入する</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;distrbtr URI=&quot;https://csrda.iss.u-tokyo.ac.jp/ssjda/&quot; abbr=&quot;SSJDA&quot; xml:lang=&quot;ja&quot; affiliation=&quot;Institute of Social Science, The University of Tokyo&quot;&gt;SSJ データアーカイブ&lt;/distrbtr&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:contributor（contributorType:Distributor）</li>
+		</list>
+	</category>
+</schema>

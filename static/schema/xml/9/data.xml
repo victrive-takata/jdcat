@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>対象地域</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->geogCover</border>
+		<label>MA（該当する場合は必須）</label>
+		<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+			<above>
+			<glossary>対象地域(<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：International Organization for Standardization, 2022, "ISO 3166 Country Codes", Geneva: International Organization for Standardization, (Retrieved January 25, 2022, https://www.iso.org/iso-3166-country-codes.html） </glossary>
+			<glossary>日本統計年鑑外地（旧地名） (<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：内閣統計局「日本帝国統計年鑑」</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>現在の国名・地域名・都道府県名、日本統計年鑑における「外地」の旧地名を統制語彙とする。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;geogCover xml:lang="ja"&gt;ロシア&lt;/geogCover&gt;
+&lt;geogCover xml:lang="ja"&gt;オーストラリア&lt;/geogCover&gt;
+&lt;geogCover xml:lang="ja"&gt;東京都&lt;/geogCover&gt;
+&lt;geogCover xml:lang="ja"&gt;神奈川県&lt;/geogCover&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:geoLocationPlace</li>
+		</list>
+	</category>
+</schema>

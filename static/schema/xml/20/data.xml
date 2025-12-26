@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>研究助成機関</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->fundAG</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>当該のデータが研究費等によって行われている場合、その研究費の拠出機関を記入する。
+			府省庁等競争的研究費を配分している機関については、資金配分機関語彙を用いること。
+			競争定期研究費を配分している機関以外は、自由記述とする。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:funderName</li>
+		</list>
+	</category>
+</schema>

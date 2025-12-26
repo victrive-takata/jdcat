@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Funding Agency</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->fundAG</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+            <label>MA (Mandatory when applicable)</label>
+            <repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>
+				If the dataset was produced with research funding, enter the name of the funding agency.  
+                For agencies that distribute competitive research funds administered by government ministries,  
+                use the controlled vocabulary for funding agencies.  
+                For other types of funders, free-text descriptions may be used.
+			</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:funderName</li>
+		</list>
+	</category>
+</schema>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Distributor</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->distStmt->distrbtr</border>
+		<label>M (Required)</label>
+		<repeat>1 (Not repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory if applicable)</label>
+			<repeat>1 (Not repeatable)</repeat>
+			<border>abbr</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Not repeatable)</repeat>
+			<border>affiliation</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Not repeatable)</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the name of the organization that distributes the data.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;distrbtr URI=&quot;https://csrda.iss.u-tokyo.ac.jp/ssjda/&quot; abbr=&quot;SSJDA&quot; xml:lang=&quot;ja&quot; affiliation=&quot;Institute of Social Science, The University of Tokyo&quot;&gt;SSJ Data Archive&lt;/distrbtr&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:contributor（contributorType:Distributor）</li>
+		</list>
+	</category>
+</schema>

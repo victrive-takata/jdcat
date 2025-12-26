@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>研究費番号</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->grantNo</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>agency</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>研究費番号を記入する</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:awardNumber</li>
+		</list>
+	</category>
+</schema>

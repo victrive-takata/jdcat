@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>母集団</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->universe</border>
+			<label>R(推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>そのデータの母集団を記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

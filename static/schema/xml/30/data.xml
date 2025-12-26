@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>編集者</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->producer</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA(強く推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>データの作成者、または配布者とデータの編集者が異なる場合に記述する。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;producer xml:lang="ja"&gt;SSJデータアーカイブ&lt;/producer&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>dc:publisher</li>
+		</list>
+	</category>
+</schema>

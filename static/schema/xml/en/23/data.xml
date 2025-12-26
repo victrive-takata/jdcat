@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Series</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->serStmt->serName</border>
+		<label>O (Optional)</label>
+		<repeat>0-1 (Non-repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the name of the series to which the survey data belongs.</li>
+		</list>
+	</category>
+
+</schema>

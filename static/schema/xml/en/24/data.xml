@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Date of collection</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->collDate</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the date or period during which the survey was conducted and data were collected.</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>Dates must be entered in YYYY-MM-DD format.</li>
+			<li>When entering a range, use a pair of values with <code>event="start"</code> and <code>event="end"</code>.</li>
+		</list>
+		</category>
+
+	<category name="recommend">
+		<codebox>&lt;collDate event="start" xml:lang="ja"&gt;2012-09-14&lt;/collDate&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

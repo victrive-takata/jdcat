@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Universe/Population</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->universe</border>
+			<label>R (Recommended)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+            <label>MA (Mandatory when applicable)</label>
+            <repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Enter the universe of the dataset.</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

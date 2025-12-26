@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>権利情報</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->prodStmt->Copyright</border>
+		<label>MA（該当する場合は必須）</label>
+		<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>データの利用条件を記入する。</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:rights</li>
+		</list>
+	</category>
+</schema>

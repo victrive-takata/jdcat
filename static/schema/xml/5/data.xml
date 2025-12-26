@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>URI</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->holdings</border>
+		<label>M（必須）</label>
+		<repeat>1（繰返不可）</repeat>
+
+		<attribute>
+			<border>URI</border>
+			<label>M（必須）</label>
+			<repeat>1（繰返不可）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>公開しているデータのランディングページ（カタログを使ってデータを検索した利用者が一番はじめに訪れるべきウェブページ）のアドレスを記入する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>属性値URIに該当の値を入力する</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;holdings URI=&quot;https://ssjda.iss.u-tokyo.ac.jp/Direct/gaiyo.php?eid=0869&quot;/&gt;</codebox>
+	</category>
+
+	<category name="deprecate">
+		<list>
+			<li>holdingsの値に当該のURLを入力しない</li>
+		</list>
+		<codebox>&lt;holdings&gt;https://ssjda.iss.u-tokyo.ac.jp/Direct/gaiyo.php?eid=0869&quot;&lt;/holdings&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:identifier (identifierType: URI)</li>
+		</list>
+	</category>
+</schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>調査日</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->sumDscr->collDate</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>その調査が実施され、データを収集している時点、期間を記入する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+		<li>調査時期はYYYY-MM-DD形式で入力する</li>
+		<li>範囲で入力する場合、start,endの対で入力する</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;collDate event="start" xml:lang="ja"&gt;2012-09-14&lt;/collDate&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

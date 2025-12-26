@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>回収率</h1>
+
+	<category name="item">
+		<border>stdyDscr->method->anlyInfo->respRate</border>
+			<label>O(任意)</label>
+			<repeat>0-N（繰返可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>回収率、サンプルサイズに関する情報を記述する。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;collDate event="end" xml:lang="ja">2012-09-21&lt;/collDate&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

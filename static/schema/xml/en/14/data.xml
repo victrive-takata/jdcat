@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Data Language</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->verStmt->notes</border>
+			<label>MA (Mandatory when applicable)</label>
+			<repeat>0-1 (Non-repeatable: expect mandatory term)</repeat>
+
+		<attribute>
+			<above>
+				<glossary>Data Language (<a href="https://iso639-3.sil.org/code_tables/639/data" target="_blank">Excel file</a>)<br />
+				Source: SIL International, 2022, "ISO 639 Code Tables", Dallas, TX: SIL International (Retrieved January 25, 2022, https://iso639-3.sil.org/code_tables/639/data)<br />
+				Source: ISO, Unicode, Inc., 2022, "Codes for the representation of names of scripts", Mountain View, CA: Unicode, Inc. (Retrieved January 25, 2022, https://unicode.org/iso15924/iso15924-codes.html)
+				</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Describe the language of the data using ISO 639-3. You may also specify the script using ISO 15924, connected with a hyphen.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;verStmt&gt;
+&lt;notes&gt;jpn&lt;/notes&gt;
+&lt;/verStmt&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:language</li>
+		</list>
+	</category>
+</schema>

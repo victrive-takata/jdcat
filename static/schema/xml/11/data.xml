@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>アクセス権</h1>
+
+	<category name="item">
+		<border>stdyDscr->dataAccs->setAvail->avlStatus</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+			<above>
+			<glossary>アクセス権(<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：オープンアクセスリポジトリ推進協会，2022，「アクセス権語彙別表」，JPCOARスキーマガイドライン，（2022年1月25日取得，https://schema.irdb.nii.ac.jp/ja/access_rights_vocabulary） </glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>そのデータのアクセス条件を記入する。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;avlStatus xml:lang="en"&gt;restricted access&lt;/avlStatus&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dcterms:accessRights</li>
+		</list>
+	</category>
+</schema>

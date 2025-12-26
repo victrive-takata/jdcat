@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>DOI</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->titlStmt->IDNo </border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>agency</border>
+			<label>M（必須）</label>
+			<repeat>1（繰返不可：必須）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>各データ配布機関で付番したDOIを記入する。</li>
+		</list>
+	</category>
+
+	<category name="deprecate">
+		<list>
+		<li>agencyは省略せず、DOIと記入すること</li>
+		</list>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>jpcoar:relatedIdentifier (identifierType=DOI)</li>
+		</list>
+	</category>
+</schema>

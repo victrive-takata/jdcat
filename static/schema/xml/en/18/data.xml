@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Sampling Procedure</h1>
+
+	<category name="item">
+		<border>stdyDscr->method->dataColl->sampProc</border>
+			<label>R (Recommended)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		<attribute>
+			<border>xml:lang</border>
+				<label>MA (Mandatory when applicable)</label>
+				<repeat>0-1 (Non-repeatable)</repeat>
+			<above>
+				<glossary>
+					Sampling Procedure (<a href="https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:SamplingProcedure:1.1" target="_blank">Excel file</a>)<br />
+					Source: DDI Alliance. (2019). Sampling Procedure (Version 1.1) [Controlled vocabulary].<br />
+					CESSDA. urn:ddi:int.ddi.cv:SamplingProcedure:1.1.<br />
+					(Retrieved January 26, 2022, https://vocabularies.cessda.eu/urn/urn:ddi:int.ddi.cv:SamplingProcedure:1.1)
+				</glossary>
+			</above>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Select and record the sampling procedure of the dataset from the controlled vocabulary.</li>
+		</list>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

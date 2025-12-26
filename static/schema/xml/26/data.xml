@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>引用上の注意</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->biblCit</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA(強く推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>拠点機関内で謝辞、引用方法を定義している場合、謝辞、引用方法を記述する。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;biblCit xml:lang=&quot;ja&quot;&gt;〔二次分析〕に当たり、東京大学社会科学研究所附属社会調査・データアーカイブ研究センターSSJデータアーカイブから〔「Global Career Survey，2012」(リクルートワークス研究所)〕の個票データの提供を受けました。The data for this secondary analysis, &quot;Global Career Survey, 2012 of the survey, Recruit Works Institute of the depositor,&quot; was provided by the Social&lt;/biblCit&gt;</codebox>
+		</category>
+</schema>

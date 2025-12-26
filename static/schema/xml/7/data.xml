@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>概要</h1>
+
+	<category name="item">
+		<border>stdyDscr->stdyInfo->abstract</border>
+		<label>MA（該当する場合は必須）</label>
+		<repeat>0-N（繰返可：必須以外）</repeat>
+
+	</category>
+
+	<category name="description">
+		<list>
+			<li>データの概要を記入する。</li>
+			<li>日本統計年鑑における和暦、人文学分野における時代区分・旧地名はこの項目に記入する。</li>
+			<li>その他、自由記述として記載したい事項はこの項目に記載する。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;abstract xml:lang="ja"&gt;アジア若年者の就職，転職実態については，これまでは比較可能なデータがなく，明らかにされてこなかった。そこで本調査は，アジア若年者の就労実態に関する基本的情報を収集し，アジアに関して共通性と差異を明らかにするために，多国間で実施された。対象は，中国，韓国，インド，タイ，マレーシア，インドネシア，ベトナム，日本である。また，アジアの相対的位置を確認するために，アメリカ，ブラジル，ドイツ，ロシア，オーストラリアにおいても調査を実施している。 　本調査では，対象を20代，30代の都市圏在住の大卒者に限定している。たとえその国に統計値が存在していても，国の内情が多様性に富む場合には，その平均値が意味をなさないことがある。つまり，誰のことを語っているのか，焦点を絞ることが重要となる。そのため本調査は，各国の経済の発展を担う，大卒20代，30代で，都市部で働いている人を対象に調査を実施している。 　なお，日本のデータは，調査番号SSJDA0870 「ワーキングパーソン調査，2012」の一部のデータを，寄託者が本調査に合わせて統合したものである。&lt;/abstract&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>datacite:description (descriptionType: Abstract)</li>
+		</list>
+	</category>
+</schema>

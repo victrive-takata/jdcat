@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>Sampling Rate</h1>
+
+	<category name="item">
+		<border>stdyDscr->method->anlyInfo->respRate</border>
+		<label>O (Optional)</label>
+		<repeat>0-N (Repeatable)</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>O (Optional)</label>
+			<repeat>0-1 (Non-repeatable)</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>Provide information on the response rate and sample size.</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;collDate event="end" xml:lang="ja">2012-09-21&lt;/collDate&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+		<li>datacite:description (descriptionType: Methods)</li>
+		</list>
+	</category>
+</schema>

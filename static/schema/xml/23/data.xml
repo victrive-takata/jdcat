@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>シリーズ</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->serStmt->serName</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA(強く推奨)</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>調査データのシリーズ名を記入する。</li>
+		</list>
+	</category>
+
+</schema>

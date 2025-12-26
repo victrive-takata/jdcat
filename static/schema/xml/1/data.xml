@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>タイトル</h1>
+
+	<category name="item">
+		<border>stdyDscr->citation->titlStmt->titl</border>
+		<label>M（必須）</label>
+		<repeat>1（繰返不可）</repeat>
+
+		<attribute>
+			<border>xml:lang</border>
+			<label>M（必須）</label>
+			<repeat>1（繰返不可）</repeat>
+		</attribute>
+	</category>
+
+	<category name="description">
+		<list>
+			<li>調査、コンテンツのタイトルを入力する。受け入れデータの場合、寄託者に確認できると良い。</li>
+		</list>
+	</category>
+
+	<category name="recommend">
+		<codebox>&lt;titl xml:lang="ja"&gt;Global Career Survey, 2012&lt;/titl&gt;</codebox>
+	</category>
+
+	<category name="deprecate">
+		<list>
+			<li>xml:langを省略しない。</li>
+            <li>複数言語の並列表記は推奨しない。</li>
+		</list>
+		<codebox>&lt;titl xml:lang="ja"&gt;情報爆発時代の研究基盤構想&lt;/titl&gt;
+&lt;titl xml:lang="ja" xml:lang="jaen"&gt;情報爆発時代の研究基盤構想 = Research Project on Cyber Infrastructure for Information-explosion Era&lt;/titl&gt;</codebox>
+	</category>
+
+	<category name="mapping">
+		<list>
+			<li>dc:title</li>
+		</list>
+	</category>
+</schema>

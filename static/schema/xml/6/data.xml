@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+	<h1>トピック</h1>
+	<category name="item">
+		<border>stdyDscr->stdyInfo->subject->topcClas</border>
+		<label>MA（該当する場合は必須）</label>
+		<repeat>0-N（繰返可：必須以外）</repeat>
+		<attribute>
+			<border>xml:lang</border>
+			<label>MA（該当する場合は必須）</label>
+			<repeat>0-1（繰返不可：必須以外）</repeat>
+			<border>vocab</border>
+			<label>M（必須）</label>
+			<repeat>1（繰返不可：必須）</repeat>
+			<border>vovabURI</border>
+			<label> R（推奨）</label>
+			<repeat>1（繰返不可：必須以外）</repeat>
+			<above>
+				<glossary>CESSDA Topic Classification (<a href="https://jdcat.jsps.go.jp/widget/uploaded/1_Topic_CESSDATopicClassification_230313.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：CESSDA. (2022). CESSDA Topic Classification (Version 4.2) [Controlled vocabulary].urn:ddi:int.cessda.cv:TopicClassification:4.2.（Retrieved April 2022, <a href=" https://vocabularies.cessda.eu/vocabulary/TopicClassification?v=4.2&amp;lang=ja" target="_blank">https://vocabularies.cessda.eu/vocabulary/TopicClassification?v=4.2&amp;lang=ja</a>）<br /><a href="https://vocabularies.cessda.eu/vocabulary/topicclassification?v=" target="_blank">CESSDA Vocabulary Service</a>: CESSDA Vocabulary Service enables users to discover, browse, and download controlled vocabularies in a variety of languages.</glossary>
+				<glossary>日本統計年鑑目次 (<a href="https://jdcat.jsps.go.jp/widget/uploaded/2_Topic_japan statistical yearbook classification_220201.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：総務省統計局「日本統計年鑑」（2022年1月25日取得，<a href="https://www.stat.go.jp/data/nenkan/index1.html" target="_blank">https://www.stat.go.jp/data/nenkan/index1.html</a>）</glossary>
+				<glossary>日本十進分類法 (<a href="https://jdcat.jsps.go.jp/widget/uploaded/3_Topic_Nippon Decimal Classification Distinction Table_220201.xlsx/Root Index" target="_blank">Excelファイル</a>)<br />出典：もり・きよし原編，2014，『日本十進分類法　新訂10版』，日本図書館協会．</glossary>
+			</above>
+		</attribute>
+	</category>
+	<category name="description">
+		<list>
+			<li>CESSDA Topic Classification、日本十進分類法を統制語彙を使ってデータに関連するトピックを記述する。日本統計年鑑目次を統制語彙と利用してもよい。</li>
+		</list>
+	</category>
+	<category name="caution">
+		<list>
+			<li>コンテンツの内容を表す件名、著者キーワード、分類を記入する。分類はコードのみを記入する。</li>
+			<li>subjectSchemeには統制語彙から選択して記入する。</li>
+			<li>subjectURIにはIDの値をHTTP URI形式で記入する。URIを持たない場合は、subjectURIは指定しない（例：<a href="https://id.ndl.go.jp/auth/ndlsh/00575529" target="_blank">https://id.ndl.go.jp/auth/ndlsh/00575529</a>）。</li>
+		</list>
+	</category>
+	<category name="recommend">
+		<codebox>&lt;topcClas vocab="CESSDATopic" vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.cessda.cv:TopicClassification" xml:lang="ja"&gt;雇用&lt;/topcClas&gt;
+&lt;topcClas vocab="CESSDATopic" vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.cessda.cv:TopicClassification" xml:lang="ja"&gt;労働条件&lt;/topcClas&gt;</codebox>
+	</category>
+	<category name="deprecate">
+		<list>
+			<li>vacabを省略しない</li>
+		</list>
+		<codebox>&lt;topcClas xml:lang="ja"&gt;雇用&lt;/topcClas&gt;
+&lt;topcClas vocab="CESSDATopic" vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.cessda.cv:TopicClassification" xml:lang="ja"&gt;労働条件&lt;/topcClas&gt;</codebox>
+	</category>
+	<category name="mapping">
+		<list>
+			<li>jpcoar:subject (subjectScheme: Other)</li>
+		</list>
+	</category>
+</schema>

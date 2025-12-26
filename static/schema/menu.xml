@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu>
+	<item>
+		<name>1 タイトル</name>
+		<english>1 Title</english>
+		<directory>1</directory>
+	</item>
+	<item>
+		<name>2 整理番号</name>
+		<english>2 Study ID</english>
+		<directory>2</directory>
+	</item>
+	<item>
+		<name>3 作成者</name>
+		<english>3 Author</english>
+		<directory>3</directory>
+	</item>
+	<item>
+		<name>4 配布者</name>
+		<english>4 Distributor</english>
+		<directory>4</directory>
+	</item>
+	<item>
+		<name>5 URI</name>
+		<english>5 URI</english>
+		<directory>5</directory>
+	</item>
+	<item>
+		<name>6 トピック</name>
+		<english>6 Topic</english>
+		<directory>6</directory>
+	</item>
+	<item>
+		<name>7 概要</name>
+		<english>7 Summary</english>
+		<directory>7</directory>
+	</item>
+	<item>
+		<name>8 対象時期</name>
+		<english>8 Time Period(s)</english>
+		<directory>8</directory>
+	</item>
+	<item>
+		<name>9 対象地域</name>
+		<english>9 Geographic Coverage</english>
+		<directory>9</directory>
+	</item>
+	<item>
+		<name>10 データタイプ</name>
+		<english>10 Data Type</english>
+		<directory>10</directory>
+	</item>
+	<item>
+		<name>11 アクセス権</name>
+		<english>11 Access</english>
+		<directory>11</directory>
+	</item>
+	<item>
+		<name>12 権利情報</name>
+		<english>12 License</english>
+		<directory>12</directory>
+	</item>
+	<item>
+		<name>13 DOI</name>
+		<english>13 DOI</english>
+		<directory>13</directory>
+	</item>
+	<item>
+		<name>14 データの言語</name>
+		<english>14 Data Language</english>
+		<directory>14</directory>
+	</item>
+	<item>
+		<name>15 バージョン情報</name>
+		<english>15 Version</english>
+		<directory>15</directory>
+	</item>
+	<item>
+		<name>16 観察単位</name>
+		<english>16 Unit of Analysis</english>
+		<directory>16</directory>
+	</item>
+	<item>
+		<name>17 母集団</name>
+		<english>17 Universe/Population</english>
+		<directory>17</directory>
+	</item>
+	<item>
+		<name>18 サンプリング方法</name>
+		<english>18 Sampling Procedure</english>
+		<directory>18</directory>
+	</item>
+	<item>
+		<name>19 調査方法</name>
+		<english>19 Collection Method</english>
+		<directory>19</directory>
+	</item>
+	<item>
+		<name>20 研究助成機関</name>
+		<english>20 Funding Agency</english>
+		<directory>20</directory>
+	</item>
+	<item>
+		<name>21 研究費番号</name>
+		<english>21 Grant ID</english>
+		<directory>21</directory>
+	</item>
+	<item>
+		<name>22 その他のタイトル</name>
+		<english>22 Alternative title</english>
+		<directory>22</directory>
+	</item>
+	<item>
+		<name>23 シリーズ</name>
+		<english>23 Series</english>
+		<directory>23</directory>
+	</item>
+	<item>
+		<name>24 調査日</name>
+		<english>24 Date of collection</english>
+		<directory>24</directory>
+	</item>
+	<item>
+		<name>25 回収率</name>
+		<english>25 Sampling Rate</english>
+		<directory>25</directory>
+	</item>
+	<item>
+		<name>26 引用上の注意</name>
+		<english>26 Bibliographic Citation</english>
+		<directory>26</directory>
+	</item>
+	<item>
+		<name>27 データファイルURI</name>
+		<english>27 Datafile URI</english>
+		<directory>27</directory>
+	</item>
+	<item>
+		<name>28 関連情報</name>
+		<english>28 Related Studies</english>
+		<directory>28</directory>
+	</item>
+	<item>
+		<name>29 関連文献</name>
+		<english>29 Related Publications</english>
+		<directory>29</directory>
+	</item>
+	<item>
+		<name>30 編集者</name>
+		<english>30 Publisher</english>
+		<directory>30</directory>
+	</item>
+	<item>
+		<name>31 所蔵者・寄託者</name>
+		<english>31 Provider</english>
+		<directory>31</directory>
+	</item>
+</menu>

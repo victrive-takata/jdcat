@@ -1,4 +1,6 @@
-function loadXML(file) {
+function loadXML() {
+	const schemamain = document.getElementById("schemaCts");
+	var file = schemamain.dataset.xmlfile;
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET", file, true);
 	xhr.onreadystatechange = function () {
@@ -143,4 +145,4 @@ function tagMake(targetItem) {
 	}
 }
 
-loadXML("load_xml.php");
+loadXML();

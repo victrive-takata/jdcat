@@ -44,7 +44,7 @@ function parseMenuXML(xmlDoc) {
 }
 
 // XMLファイルを指定して読み込み
-loadMenuXML("/schema/load_menu.php");
+loadMenuXML("https://cdn.jsdelivr.net/gh/victrive-takata/jdcat/@/f2f2832af0cc1d5cd103e9ed2b8767780589cea8/static/schema/menu.xml");
 
 document.querySelector('#schemaMenuTitle a').addEventListener('click', function(e){
 	e.preventDefault();

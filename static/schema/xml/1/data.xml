@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schema>
-	<h1>タイトル</h1>
+	<h1>整理番号</h1>
 
 	<category name="item">
-		<border>stdyDscr->citation->titlStmt->titl</border>
+		<border>stdyDscr->citation->titlStmt->IDNo</border>
 		<label>M（必須）</label>
 		<repeat>1（繰返不可）</repeat>
 
 		<attribute>
 			<border>xml:lang</border>
+			<label>O(任意)</label>
+			<repeat>0-1（繰返不可）</repeat>
+			<border>agency</border>
 			<label>M（必須）</label>
 			<repeat>1（繰返不可）</repeat>
 		</attribute>
@@ -16,26 +19,33 @@
 
 	<category name="description">
 		<list>
-			<li>調査、コンテンツのタイトルを入力する。受け入れデータの場合、寄託者に確認できると良い。</li>
+			<li>各データ配布機関で付番したIDを記入する。</li>
+		</list>
+	</category>
+
+	<category name="caution">
+		<list>
+			<li>agencyは省略せず、機関略書を半角文字で記入すること</li>
 		</list>
 	</category>
 
 	<category name="recommend">
-		<codebox>&lt;titl xml:lang="ja"&gt;Global Career Survey, 2012&lt;/titl&gt;</codebox>
+		<codebox>&lt;IDNo agency="SSJDA" xml:lang="ja"&gt;0869&lt;/IDNo&gt;</codebox>
 	</category>
 
 	<category name="deprecate">
 		<list>
-			<li>xml:langを省略しない。</li>
-            <li>複数言語の並列表記は推奨しない。</li>
+			<li>agencyは省略しない</li>
+			<li>agencyに全角文字は使わない</li>
+
 		</list>
-		<codebox>&lt;titl xml:lang="ja"&gt;情報爆発時代の研究基盤構想&lt;/titl&gt;
-&lt;titl xml:lang="ja" xml:lang="jaen"&gt;情報爆発時代の研究基盤構想 = Research Project on Cyber Infrastructure for Information-explosion Era&lt;/titl&gt;</codebox>
+		<codebox>&lt;IDNo&gt;0869&lt;/IDNo&gt;
+&lt;IDNo agency=&quot;SSJデータアーカイブ&quot; xml:lang=&quot;ja&quot;&gt;0869&lt;/IDNo&gt;</codebox>
 	</category>
 
 	<category name="mapping">
 		<list>
-			<li>dc:title</li>
+			<li>jpcoar:relatedIdentifier (identifierType=Local)</li>
 		</list>
 	</category>
 </schema>
